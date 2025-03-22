@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add Font Awesome CDN to your HTML file (in the <head> section) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>Praćenje zaposlenih</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+  <h1>Firma - Praćenje zaposlenih</h1>
+  <button id="dodavanje">Dodaj novog zaposlenog</button>
+
+  <div class="container">
+    <!-- New employee entry form -->
+    <div class="form-container">
+      <h2>Informacije o zaposlenom</h2>
+      <h5>Popunite formu</h5>
+      <form id="zaposleniForm">
+        <table class="formica">
+          <tr>
+            <td>
+              <label for="ID">ID zaposlenog:</label>
+              <input type="text" name="ID" id="ID" placeholder="ID" required autocomplete="off">
+            </td>
+            <td>
+              <label for="ime">Ime:</label>
+              <input type="text" name="ime" id="ime" placeholder="Ime" required>
+            </td>
+            <td>
+              <label for="prezime">Prezime:</label>
+              <input type="text" name="prezime" id="prezime" placeholder="Prezime" required>
+            </td>
+            <td>
+              <label for="datumRodjenja">Datum rođenja:</label>
+              <input type="date" name="datumRodjenja" id="datumRodjenja" required>
+            </td>
+            <tr>
+             <td>
+              <label for="JMBG">JMBG</label>
+              <input type="text" name="JMBG" id="JMBG" maxlength="13" size="13" placeholder="JMBG" required autocomplete="off">
+             </td>
+             <td>
+              <label for="adresa">Adresa</label>
+              <input type="text" name="adresa" id="adresa" placeholder="Adresa">
+            </td>
+            <td>
+              <label for="brojTelefona">Broj telefona:</label>
+              <input type="tel" name="brojTelefona" id="brojTelefona" placeholder="Broj telefona" required autocomplete="off">
+            </td>
+            <td>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pozicija">Pozicija:</label>
+              <input type="text" name="pozicija" id="pozicija" placeholder="Pozicija" required>
+            </td>
+            <td>
+              <label for="datumZaposlenja">Datum zaposlenja:</label>
+              <input type="date" name="datumZaposlenja" id="datumZaposlenja" placeholder="Datum zaposlenja" required>
+            </td>
+            <td>
+              <label for="plata">Plata(RSD)</label>
+              <input type="number" name="plata" id="plata" placeholder="Plata (RSD)" min="0" required>
+            </td>
+            <td>
+              <label for="odeljenje">Odeljenje:</label>
+              <select name="odeljenje" id="odeljenje">
+                <option value="Software Development">Software Development</option>
+                <option value="Engineering">Engineering</option>
+                <option value="QA">Quality Assurance (QA)</option>
+                <option value="DevOps">Development and Operations</option>
+                <option value="Project Management">Project Management</option>
+                <option value="Product Development">Product Development</option>
+                <option value="Customer Support">Customer Support</option>
+                <option value="Marketing and Sales">Marketing and Sales</option>
+                <option value="Security">Security</option>
+                <option value="IT Support">IT Support</option>
+              </select>
+            </td>
+            <td>
+              <label for="status">Status</label>
+              <select name="status" id="status">
+                <option value="aktivan">Aktivan</option>
+                <option value="odmor">Na odmoru</option>
+                <option value="bolovanje">Na bolovanju</option>
+                <option value="obuka">Na obuci</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="submit">Dodaj</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+
+  <!-- Filter buttons -->
+  <div class="filter-container">
+    <h2>Filtriranje po statusu</h2>
+    <button onclick="filtrirajZaposlene('aktivan')">Aktivni</button>
+    <button onclick="filtrirajZaposlene('odmor')">Na odmoru</button>
+    <button onclick="filtrirajZaposlene('bolovanje')">Na bolovanju</button>
+    <button onclick="filtrirajZaposlene('obuka')">Na obuci</button>
+    <button onclick="prikaziSveZaposlene()">Svi zaposleni</button>
+  </div>
+
+  <!-- List of employees -->
+  <div id="listaZaposlenih">
+    <h2>Lista zaposlenih</h2>
+    
+    <div class="search-container">
+      <input type="search" id="searchInput" placeholder="Pretraga..."> 
+      <i class="fas fa-search"></i> <!-- Search icon -->
+    </div>
+
+    <table id="mojaTabela">
+      <tr>
+        <th> ID </th>
+        <th> Ime </th>
+        <th> Prezime </th>
+        <th> Datum rođenja </th>
+        <th> JMBG </th>
+        <th> Adresa </th>
+        <th> Telefon </th>
+        <th> E-mail </th>
+        <th> Pozicija </th>
+        <th> Datum zaposlenja </th>
+        <th> Plata (RSD) </th>
+        <th> Odeljenje </th>
+        <th> Status </th>
+      </tr>
+      <tbody id="zaposleniLista">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .formica {
+    width: 100%; /* Make the table fill the container on small screens */
+  }
+
+  .formica td {
+    display: block; /* Stack the table cells on smaller screens */
+    width: 100%; /* Full width for each cell */
+    margin-bottom: 15px; /* Add space between the rows */
+  }
+
+  .formica label {
+    font-size: 14px; /* Smaller font size for labels on mobile */
+  }
+
+  .formica input, .formica select {
+    font-size: 14px; /* Smaller font size for inputs on mobile */
+  }
+
+  .formica button {
+  width: 100%; /* Full-width button on mobile */
+  }
+}

@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: auto;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 50%; 
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10px;
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color:#333;
+}
+
+.filter-container {
+  margin: 20px;
+  margin-top: 50px;
+} 
+
+.filter-container button {
+  padding: 5px;
+  margin: 3px;
+  background-color: #0088f7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.filter-container button:hover {
+  background-color: #0079e2;
+}
+
+#listaZaposlenih {
+  padding: 20px;
+  width: 100%;
+} 
+
+#listaZaposlenih table{
+  width: 100%;
+  border: 1px solid rgb(58, 58, 58);
+  border-collapse: collapse;
+}
+
+#listaZaposlenih th {
+  border: 1px solid rgb(58, 58, 58);
+  border-collapse: collapse; 
+  background-color: rgba(206, 232, 255, 0.815);
+  height: 30px;
+  padding: 5px;
+}
+
+.stilTd {
+  border: 1px solid rgb(58, 58, 58);
+  border-collapse: collapse;
+  height: 30px;
+  padding: 5px;
+}
+
+#dodavanje {
+  width: 90px;
+  height: 50px;
+  padding: 5px;
+  margin: 20px;
+  background-color: #1f943b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dodavanje:hover {
+  background-color: #188832;
+}
+
+#listaZaposlenih td:last-child, #listaZaposlenih table:last-child { 
+  border: none;
+} 
+
+.stilDugmeRemove {
+  background-color: #ff4d4d; /* Red color for remove button  */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+} 
+
+.stilDugmeRemove:hover {
+  background-color: #ec3f3f;
+}
+
+.formica {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Styling each table cell */
+.formica td {
+  padding: 5px;
+  vertical-align: bottom; 
+}
+
+/* Style form input fields */
+.formica input, .formica select {
+  width: 100%; /* Make inputs fill the cell */
+  padding: 8px; /* Add padding inside input fields */
+  margin-top: 5px; /* Add space between the label and input field */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 4px; /* Rounded borders for inputs */
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
+}
+
+/* Style submit button */
+.formica button {
+  background-color: #1f943b; /* Green background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+}
+
+/* Style the submit button on hover */
+.formica button:hover {
+  background-color: #188832; /* Darker green on hover */
+}
+
+/* Style for the labels */
+.formica label {
+  font-weight: bold; /* Bold labels */
+  color: #333; /* Darker text color for labels */
+}
+
+.search-container {
+  position: relative;
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+input[type=search] {
+  width: 100%;
+  padding: 5px 10px 5px 30px; /* Add padding to make space for the icon */
+  font-size: 16px; 
+}
+
+.search-container i {
+  position: absolute;
+  left: 10px; /* Position the icon on the left side of the input */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* This prevents the icon from interfering with the input */
+}
+
+.tdHidden {
+  display: none;
+}
+
+.inputField {
+  height: 25px;
+  background-color: rgb(196, 196, 196);
+  font-size: 16px;
+  padding: 3px;
+}
+
+#listaZaposlenih td:hover {
+  background-color: rgb(140, 185, 215);
+}
+
+#listaZaposlenih td:first-child:hover {
+  background-color: rgba(206, 232, 255, 0.815);
+}                               
+
+#listaZaposlenih td:nth-last-child(2) {
+  background-color: #f4f4f4;
+}
+
+#listaZaposlenih tr:hover {
+  background-color: rgba(206, 232, 255, 0.815);
+}
+
+#listaZaposlenih tbody {
+  background-color: white;
+}
+
+#listaZaposlenih td:focus {
+  background-color: lightgoldenrodyellow;
+}
