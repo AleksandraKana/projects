@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meni</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <table>
+      <tr class="napici">
+        <th>Topli napici</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Cena</td>
+        <td class="kol">Količina</td>
+        <td class="ukupnaCena">Ukupna cena</td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Cappuccino</td>
+        <td>210 din</td>
+        <td class="kol"><input type="number" id="kol1" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Latte macchiato</td>
+        <td>220 din</td>
+        <td class="kol"><input type="number" id="kol2" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Domaća kafa</td>
+        <td>150 din</td>
+        <td class="kol"><input type="number" id="kol3" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Nes kafa</td>
+        <td>190 din</td>
+        <td class="kol"><input type="number" id="kol4" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Topla čokolada</td>
+        <td>260 din</td>
+        <td class="kol"><input type="number" id="kol5" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Espresso</td>
+        <td>160 din</td>
+        <td class="kol"><input type="number" id="kol6" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Espresso sa šlagom</td>
+        <td>190 din</td>
+        <td class="kol"><input type="number" id="kol7" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td class="prvaKolona">Espresso sa mlekom</td>
+        <td>180 din</td>
+        <td class="kol"><input type="number" id="kol8" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Čaj (nana / šumsko voće)</td>
+        <td>210 din</td>
+        <td class="kol"><input type="number" id="kol9" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Hladni napici</th>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Ice Coffee</td>
+        <td>200 din</td>
+        <td class="kol"><input type="number" id="kol10" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Ice espresso</td>
+        <td>220 din</td>
+        <td class="kol"><input type="number" id="kol11" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Ice cappuccino</td>
+        <td>250 din</td>
+        <td class="kol"><input type="number" id="kol12" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Ice Tea (breskva / jagoda / limun)</td>
+        <td>160 din</td>
+        <td class="kol"><input type="number" id="kol13" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Frappe (banana / jagoda / ananas)</td>
+        <td>200 din</td>
+        <td class="kol"><input type="number" id="kol14" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+      <tr>    
+        <td class="prvaKolona">Frappe plazma</td>
+        <td>300 din</td>
+        <td class="kol"><input type="number" id="kol15" value="0" min="0"></td>
+        <td class="ukupnaCena"></td>
+      </tr>
+    </table>
+
+    <p>Za sve porudžbine preko 500 dinara ostvarujete pravo na popust od 10%.</p>
+  </div>
+
+  <div class="korpa">
+    <h1>Moja korpa:</h1>
+    <br>
+    <div>
+      Vrednost 
+      <br>
+      porudžbine:
+      <span id="total" class="cena"></span>
+    </div>
+    <div>
+      Popust:
+      <span id="usteda" class="cena"></span>
+    </div>
+    <div>
+      Ukupno za 
+      <br>
+      plaćanje: 
+      <span id="novaCena" class="cena"></span>
+    </div>
+    <button>Završi porudžbinu</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

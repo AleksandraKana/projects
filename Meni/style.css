@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("coffee2.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: left;
+  color: rgb(70, 15, 15);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table {
+  border: 3px solid rgba(243, 174, 186, 0.8); 
+  border-collapse: collapse;
+  margin: 5px 10px;
+} 
+
+td, th {
+  width: 150px;
+  height: 30px;
+}
+
+th {
+  font-size: 27px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+table input {
+  width: 40px;
+  color: rgb(70, 15, 15);
+  background-color: rgb(247, 247, 247);
+  font-weight: bold;
+}
+
+td {
+  text-align: right;
+  padding: 5px;
+}
+
+.prvaKolona {
+  text-align: left;
+  padding-left: 15px;
+  width: 315px;
+}
+
+.kol {
+  width: 30px;
+  padding-left: 20px;
+}
+
+.ukupnaCena {
+  width: 100px;
+  padding-right: 15px;
+} 
+
+p {
+  margin: 10px;
+}
+        
+.korpa {
+  border: 9px double rgba(243, 174, 186, 0.8);
+  float: right;
+  margin-right: 30px;
+  margin-top: 5px;
+  width: 350px;
+  padding: 10px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+#container {
+  float: left;
+}
+
+.korpa div {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.cena {
+  font-size: 25px;
+  text-align: right;
+  float: right;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 45px;
+  width: 180px;
+  font-size: 18px;
+  color:rgb(70, 15, 15);
+  cursor: pointer;
+  background-color:#FFC107;
+  border: 3px solid rgb(70, 15, 15);
+} 
+
+button:hover {
+  border: 3px solid rgba(243, 174, 186, 0.8);
+  background-color: rgb(70, 15, 15);
+  color: beige;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
