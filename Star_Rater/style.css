@@ -1,0 +1,23 @@
+.stars ul {
+  list-style-type: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes padding */
+}
+
+.star {
+  font-size: 2em;
+  color: #ddd;
+  display: inline-block; /* Display stars in a horizontal row*/ 
+}
+
+.orange {
+  color: orange;
+}
+
+.output {
+  background-color: #ddd;
+}
+
+.average-rating {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
