@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+
+/* Styling for the game area and elements */
+.output {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+/* Box that appears for the user to click */
+.box {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  left: 20%;
+  background-color: red;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for messages displayed */ 
+.message1, .message2, .instructions {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.instructions li {
+  text-align: left;
+  padding: 10px;
+}
+      
+/* Styling for restart button */
+.restartBtn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+}
+
+.restartBtn:hover {
+  background-color: darkgreen;
+}
