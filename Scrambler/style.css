@@ -1,0 +1,55 @@
+body {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+#container {
+  background-color: rgb(210, 233, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 240px;
+  width: 300px;
+  border: 2px solid rgb(25, 100, 165);
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#container h1 {
+  color:rgb(25, 100, 165);
+}
+
+input {
+  height: 20px;
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(25, 100, 165);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button {
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(25, 100, 165);
+  border-radius: 5px;
+  background-color: rgb(50, 135, 210);
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgb(25, 100, 165);
+  color: white;
+}
+
+#skremblovanaRec {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+}
