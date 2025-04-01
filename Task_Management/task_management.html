@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Search Tasks..." onkeyup="searchTasks()">
+
+    <div class="board">
+      <!-- To Do column -->
+      <div class="column" id="toDo" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>To Do</h2>
+        <div class="task-counter" id="todo-counter">0</div>
+        <button class="add-task-btn" onclick="addTask('toDo')">Add Task</button>
+      </div>
+
+      <!-- In Progress column -->
+      <div class="column" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>In Progress</h2>
+        <div class="task-counter" id="inprogress-counter">0</div>
+      </div>
+
+      <!-- On Hold column -->
+      <div class="column" id="onHold" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>On Hold</h2>
+        <div class="task-counter" id="onhold-counter">0</div>
+      </div>
+
+      <!-- In Review column -->
+      <div class="column" id="inReview" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>In Review</h2>
+        <div class="task-counter" id="inreview-counter">0</div>
+      </div>
+
+      <!-- Completed column -->
+      <div class="column" id="completed" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Completed</h2>
+        <div class="task-counter" id="completed-counter">0</div>
+      </div>
+
+      <!-- Overdue column -->
+      <div class="column" id="overdue" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Overdue</h2>
+        <div class="task-counter" id="overdue-counter">0</div>
+      </div>
+    </div>   
+  </body>
+</html>
