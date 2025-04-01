@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", loadList); // Call loadList() when
 
 const addItem = document.getElementById("addItem");
 const addNew = document.getElementById("addNew");
-const slist = document.getElementById("sList");
+const sList = document.getElementById("sList");
 const deleteAllBtn = document.getElementById("deleteAllBtn");
 
 addNew.addEventListener("click", addOne);
@@ -74,7 +74,7 @@ function addItemToList(text, checked = false) {
   imageEdit.classList.add("imgEdit");
   liEle.appendChild(imageEdit);
 
-  slist.appendChild(liEle);
+  sList.appendChild(liEle);
   addItem.value = ""; // Clear input field
 
   // Apply strikethrough if the checkbox was already checked
